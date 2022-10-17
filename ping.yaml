@@ -1,9 +1,9 @@
 - name: "[DEMO SAMPLE] Ping action"
   hosts: all
   collections:
-  - netcommon.net_ping
+  - ansible.netcommon.net_ping
   tasks:
     - name: Ping nagios host      
-      net_ping:
-        dest: 169.62.252.102
+      ansible.netcommon.net_ping:
+        dest: "{{ HOST }}"
       
