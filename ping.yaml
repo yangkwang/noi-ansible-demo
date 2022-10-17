@@ -1,5 +1,9 @@
-- name: "[DEMO SAMPLE] Ping action"
-  ansible.builtin.ping:
+- hosts: all
+  tasks:
+    - name: ping nagios host
+      ping:
+        data: crash
+  
   # hosts: localhost
   # collections:    
   #   - ansible.netcommon
