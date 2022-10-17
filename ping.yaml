@@ -1,5 +1,5 @@
 - name: "[DEMO SAMPLE] Ping action"
-  hosts: all
+  hosts: localhost
   collections:    
     - ansible.netcommon
   tasks:
