@@ -1,9 +1,10 @@
 - name: "[DEMO SAMPLE] Ping action"
-  hosts: localhost
-  collections:    
-    - ansible.netcommon
-  tasks:
-    - name: Ping nagios host      
-      ansible.netcommon.net_ping:
-        dest: "{{ HOST }}"
+  ansible.builtin.ping:
+  # hosts: localhost
+  # collections:    
+  #   - ansible.netcommon
+  # tasks:
+  #   - name: Ping nagios host      
+  #     ansible.netcommon.net_ping:
+  #       dest: "{{ HOST }}"
       
