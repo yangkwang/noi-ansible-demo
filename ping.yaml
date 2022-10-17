@@ -1,7 +1,7 @@
 - name: "[DEMO SAMPLE] Ping action"
   hosts: all
   tasks:
-    - name: Ping nagios host
-      ansible.builtin.ping:
-        data: crash
+    - name: Ping nagios host      
+      ansible.netcommon.net_ping:
+        dest: 169.62.252.102
       
