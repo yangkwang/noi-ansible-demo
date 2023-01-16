@@ -3,8 +3,5 @@
   tasks: 
     - name: resolve disk error 
       shell: |
-        echo "Login to OCP"
-        oc login --token={{ OC_TOKEN }} --server={{ OCP_SERVER }}
-
-        echo "Run resolve command"
-        oc exec -it evtmanager-ncoprimary-0 -n noi bash -- /tmp/nco_ClearNagiosTopo.sh
+        echo "log messagea"
+        echo "testing" > /tmp/runbook.log
