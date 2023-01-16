@@ -4,4 +4,4 @@
     - name: resolve disk error 
       shell: |
         echo "log messagea"
-        echo "testing" > /tmp/runbook.log
+        echo "testing" >> /tmp/runbook.log
