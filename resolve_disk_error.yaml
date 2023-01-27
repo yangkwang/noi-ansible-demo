@@ -3,5 +3,6 @@
   tasks: 
     - name: resolve disk error 
       shell: |
-        echo "log messagea"
-        echo "testing" >> /tmp/runbook.log
+        echo "log message"
+        echo "Service" {{ SERVICE }}
+        /tmp/test-ansible.sh {{ SERVICE }}
